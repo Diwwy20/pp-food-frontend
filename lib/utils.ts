@@ -10,7 +10,7 @@ export function getImageUrl(path: string | null | undefined) {
 
   if (path.startsWith("http")) return path;
 
-  const imageBaseUrl = process.env.NEXT_PUBLIC_API_URL_IMAGE;
+  const imageBaseUrl = process.env.NEXT_PUBLIC_SERVER_URL;
 
   return `${imageBaseUrl}${path}`;
 }
