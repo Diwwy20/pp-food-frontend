@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { ChevronLeft } from "lucide-react";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslations } from "next-intl";
+import { ChevronLeft } from "lucide-react";
+import DemoCredentialModal from "@/components/DemoCredentialModal";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   const t = useTranslations("Auth");
@@ -17,7 +18,8 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
         </Link>
       </div>
 
-      <div className="absolute top-6 right-6 md:top-8 md:right-8 z-10">
+      <div className="absolute top-6 right-6 md:top-8 md:right-8 z-10 flex items-center gap-3">
+        <DemoCredentialModal />
         <LanguageSwitcher />
       </div>
 
