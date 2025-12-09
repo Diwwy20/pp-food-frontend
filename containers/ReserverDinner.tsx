@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import reservations from "../public/images/reservations.png";
+import reservations from "/images/reservations.png";
 
 import {
   ShoppingCart,
@@ -84,6 +84,7 @@ const ReserverDinner = () => {
           alt="Reservation"
           fill
           className="object-contain z-10 drop-shadow-xl hover:scale-105 transition-transform duration-500"
+          unoptimized
         />
       </div>
     </section>

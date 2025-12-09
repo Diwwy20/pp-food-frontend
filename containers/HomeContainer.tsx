@@ -86,6 +86,7 @@ const HomeContainer = () => {
           height={400}
           priority
           alt="Delicious Restaurant Dish"
+          unoptimized
         />
 
         <div className="absolute inset-y-0 right-0 md:flex flex-col items-center justify-center gap-6 hidden">
@@ -110,6 +111,7 @@ const HomeContainer = () => {
                       width={24}
                       height={24}
                       className="object-contain"
+                      unoptimized
                     />
                     <p className="font-semibold text-[#372117] text-sm capitalize">
                       {tCat(cat.label as any)}

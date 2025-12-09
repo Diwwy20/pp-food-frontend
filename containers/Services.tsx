@@ -47,6 +47,7 @@ const Services = () => {
             alt="Chef Services"
             fill
             className="object-contain z-10 drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+            unoptimized
           />
 
           <div className="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-white/40 rounded-full z-0" />

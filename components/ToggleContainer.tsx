@@ -82,6 +82,7 @@ const ToggleContainer = () => {
                 alt="logo"
                 fill
                 className="object-contain"
+                unoptimized
               />
             </div>
             <div>
@@ -122,7 +123,7 @@ const ToggleContainer = () => {
                 <Link href="/login" className="w-full">
                   <Button
                     variant="outline"
-                    className="w-full rounded-xl border-gray-200 text-[#372117] h-11 font-bold hover:bg-gray-50 hover:text-[#372117]"
+                    className="w-full rounded-xl border-gray-200 text-[#372117] h-11 font-bold hover:bg-gray-50 hover:text-[#372117] cursor-pointer"
                   >
                     {tAuth("login")}
                   </Button>
@@ -130,7 +131,7 @@ const ToggleContainer = () => {
               </SheetClose>
               <SheetClose asChild>
                 <Link href="/register" className="w-full">
-                  <Button className="w-full rounded-xl bg-[#f4bc58] text-[#372117] hover:bg-[#f4bc58]/90 h-11 font-bold shadow-sm">
+                  <Button className="w-full rounded-xl bg-[#f4bc58] text-[#372117] hover:bg-[#f4bc58]/90 h-11 font-bold shadow-sm cursor-pointer">
                     {tAuth("register")}
                   </Button>
                 </Link>
@@ -154,7 +155,7 @@ const ToggleContainer = () => {
               <button
                 onClick={() => changeLanguage("th")}
                 className={cn(
-                  "flex items-center justify-center py-2 rounded-lg text-sm transition-all",
+                  "flex items-center justify-center py-2 rounded-lg text-sm transition-all cursor-pointer",
                   locale === "th"
                     ? "bg-[#f4bc58] text-[#372117] font-bold shadow-sm"
                     : "text-gray-500 hover:bg-gray-100"
@@ -165,7 +166,7 @@ const ToggleContainer = () => {
               <button
                 onClick={() => changeLanguage("en")}
                 className={cn(
-                  "flex items-center justify-center py-2 rounded-lg text-sm transition-all",
+                  "flex items-center justify-center py-2 rounded-lg text-sm transition-all cursor-pointer",
                   locale === "en"
                     ? "bg-[#f4bc58] text-[#372117] font-bold shadow-sm"
                     : "text-gray-500 hover:bg-gray-100"

@@ -12,6 +12,7 @@ const LogoContainer = () => {
         height={100}
         priority
         className="object-contain"
+        unoptimized
       />
       <h2
         className="font-bold text-[#372117] text-xl"
