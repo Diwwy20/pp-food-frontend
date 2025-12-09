@@ -62,9 +62,6 @@ pnpm run dev
 Experience the platform live — no setup needed!
 👉 [https://pp-food.netlify.app/](https://pp-food.netlify.app/)
 
-The app is fully deployed and ready to explore.
-You can create an account, browse quotes, and view your personal dashboard right away.
-
 🔐 Test Credentials
 You can use these accounts to test the Admin CMS and User Features:
 
