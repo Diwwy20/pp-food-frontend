@@ -62,7 +62,7 @@ const DemoCredentialModal = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="h-8 w-8"
+              className="h-8 w-8 cursor-pointer hover:bg-white hover:shadow-sm"
               onClick={() => handleCopy(item.email)}
               title="Copy Email"
             >
@@ -84,7 +84,7 @@ const DemoCredentialModal = () => {
         <Button
           variant="outline"
           size="icon"
-          className="rounded-full bg-white shadow-sm hover:bg-[#f4bc58]/10 border-gray-200"
+          className="rounded-full bg-white shadow-sm hover:bg-[#f4bc58]/10 border-gray-200 cursor-pointer"
           title="Demo Credentials"
         >
           <Key className="h-4 w-4 text-[#372117]" />
@@ -93,7 +93,7 @@ const DemoCredentialModal = () => {
       <DialogContent className="max-w-md">
         <DialogHeader>
           <DialogTitle className="text-center font-bold text-[#372117]">
-            Demo Accounts
+            Demo Accounts 🧪
           </DialogTitle>
           <DialogDescription className="text-center">
             Click copy button to use credentials
@@ -102,10 +102,10 @@ const DemoCredentialModal = () => {
 
         <Tabs defaultValue="user" className="w-full">
           <TabsList className="grid w-full grid-cols-2">
-            <TabsTrigger value="user" className="flex gap-2">
+            <TabsTrigger value="user" className="flex gap-2 cursor-pointer">
               <User className="w-4 h-4" /> Users
             </TabsTrigger>
-            <TabsTrigger value="admin" className="flex gap-2">
+            <TabsTrigger value="admin" className="flex gap-2 cursor-pointer">
               <Shield className="w-4 h-4" /> Admins
             </TabsTrigger>
           </TabsList>
