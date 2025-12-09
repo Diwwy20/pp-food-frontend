@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import reservations from "/images/reservations.png";
+import reservations from "../public/images/reservations.png";
 
 import {
   ShoppingCart,
