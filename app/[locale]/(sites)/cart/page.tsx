@@ -81,7 +81,7 @@ const CartPage = () => {
 
   const subTotal =
     cart?.items?.reduce((acc, item) => {
-      return acc + Number(item.product.price) * item.quantity;
+      return acc + Number(item.pricePerUnit) * item.quantity;
     }, 0) || 0;
 
   if (isLoading || !isInitialized) {
@@ -148,7 +148,7 @@ const CartPage = () => {
         <div className="lg:col-span-2 space-y-4">
           {cart.items.map((item) => {
             const noteOption = item.selectedOptions?.find(
-              (o: any) => o.name === "Note"
+              (o: any) => o.name === "Note",
             );
             const otherOptions =
               item.selectedOptions?.filter((o: any) => o.name !== "Note") || [];
@@ -178,7 +178,7 @@ const CartPage = () => {
                         {getLocalizedText(
                           locale,
                           item.product.nameTh,
-                          item.product.nameEn
+                          item.product.nameEn,
                         )}
                       </h3>
 
@@ -210,7 +210,7 @@ const CartPage = () => {
                       <p className="font-bold text-[#372117] text-base">
                         {tCommon("baht")}{" "}
                         {(
-                          Number(item.product.price) * item.quantity
+                          Number(item.pricePerUnit) * item.quantity
                         ).toLocaleString()}
                       </p>
                     </div>

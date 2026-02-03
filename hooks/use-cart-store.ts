@@ -24,7 +24,7 @@ export const useCartStore = create<CartState>((set, get) => ({
       const count =
         cartData?.items?.reduce(
           (acc: number, item: CartItem) => acc + item.quantity,
-          0
+          0,
         ) || 0;
       set({ cart: cartData, totalItems: count, isLoading: false });
     } catch (error) {
@@ -37,7 +37,7 @@ export const useCartStore = create<CartState>((set, get) => ({
     const count =
       cart?.items?.reduce(
         (acc: number, item: CartItem) => acc + item.quantity,
-        0
+        0,
       ) || 0;
     set({ cart, totalItems: count });
   },
@@ -47,12 +47,12 @@ export const useCartStore = create<CartState>((set, get) => ({
     if (!currentCart) return;
 
     const newItems = currentCart.items.map((item) =>
-      item.id === itemId ? { ...item, quantity: newQuantity } : item
+      item.id === itemId ? { ...item, quantity: newQuantity } : item,
     );
 
     const newTotalItems = newItems.reduce(
       (acc, item) => acc + item.quantity,
-      0
+      0,
     );
 
     set({
