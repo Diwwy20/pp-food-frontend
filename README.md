@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍔 PP Food Web App
 
-## Getting Started
+**PP Food** is a comprehensive full-stack food ordering platform designed to bridge the gap between customers and restaurant management. It features a robust **Authentication System** and a dynamic **Content Management System (CMS)** for real-time menu updates.
 
-First, run the development server:
+Users can enjoy a seamless experience from registration to menu browsing, while administrators have full control over the restaurant's offerings through a dedicated dashboard.
+
+- 🔐 **Secure Identity**: Verified accounts via Email OTP & Password recovery support.
+- 🛒 **Dynamic Cart**: Users can browse menus and manage their shopping cart in real-time.
+- 👨‍🍳 **Admin Power**: Full CRUD capabilities for Menus, Categories, and Add-ons.
+
+---
+
+## 🚀 Features
+
+### 👤 User & Authentication
+- **Secure Registration**: Sign up with email verification (OTP via SMTP).
+- **Profile Management**: Update user profile information and avatars.
+- **Account Recovery**: Secure "Forgot Password" flow via email.
+- **Menu Browsing**: Explore dishes by categories (e.g., Main, Appetizers, Drinks).
+- **Cart**: Add items with add-on options and manage cart quantities.
+
+### 🛡️ Admin & CMS
+- **Menu Management**: Create, edit, and delete food items.
+- **Category Control**: Manage food categories (e.g., Main Course, Beverages).
+- **Add-on System**: Configure extra options for specific menu items.
+- **Image Handling**: Upload and manage food images.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: Next.js (App Router) + TypeScript
+- **UI & Styling**: TailwindCSS + shadcn/ui
+- **Backend**: Node.js + Express + TypeScript
+- **Database**: MySQL
+- **Services**: Nodemailer (SMTP) Email Template
+- **Deployment**: Netlify (Frontend), Railway (Backend)
+
+---
+
+## 📦 How to Run the Project
+
+Follow the steps below to run the **Frontend** locally:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 1. Clone the repository
+git clone https://github.com/Diwwy20/pp-food-frontend
+
+# 2. Install dependencies
+pnpm install
+
+# 3. Create a `.env` file in the root directory and add your API keys:
+NEXT_PUBLIC_API_URL="http://localhost:5000/api/v1"
+NEXT_PUBLIC_IMAGE_URL="http://localhost:5000"
+
+# 4. Start the development server (http://localhost:3000)
+pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌍 Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Experience the platform live — no setup needed!
+👉 [https://pp-food.netlify.app/](https://pp-food.netlify.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔐 Test Credentials
+You can use these accounts to test the Admin CMS and User Features:
 
-## Learn More
+👑 Admin Accounts (Admin Access)
 
-To learn more about Next.js, take a look at the following resources:
+Email: admin1@gmail.com  Pass: 123456Ab
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Email: admin2@gmail.com  Pass: 123456Ab
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+👤 User Accounts (Customer View)
 
-## Deploy on Vercel
+Email: user1@gmail.com  Pass: 123456Ab
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Email: user2@gmail.com  Pass: 123456Ab
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Email: user3@gmail.com  Pass: 123456Ab
